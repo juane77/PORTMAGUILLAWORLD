@@ -1,0 +1,156 @@
+body {
+    background-color: rgb(191, 238, 252);
+}
+
+h1 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    background: linear-gradient(to right, #22b2f5, #09026d, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-principal {
+    background-color: blue;
+    text-align: center;
+    padding: auto;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.menu-principal a {
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.menu-principal a:hover {
+    color: black;
+}
+
+h2 {
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(to right, #ffffff, #0f408d, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.atracciones ul {
+    align-content: center;
+    text-align: center;
+}
+
+.atracciones li {
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4), 0 0 25px rgba(24, 3, 108, 0.5);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.hover {
+    transition: 4s;
+}
+
+.hover:hover {
+    width: 100%;
+    height: auto;
+}
+
+
+table,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+tr:nth-child(1) {
+    font-size: 20px;
+    font-family: serif;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(106, 198, 255);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(14, 65, 97);
+}
+
+.españa {
+    border-image-source: linear-gradient(#ce0000, #f7ff19, #c70202);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+    padding: 4px;
+    transition: 1s;
+}
+
+.españa:hover {
+    width: 400px;
+    height: 300px;
+}
+
+.italia {
+    border-image-source: linear-gradient(#099f11, #ffffff, #930202);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+    padding: 4px;
+    transition: 1s;
+}
+
+.italia:hover {
+    width: 400px;
+    height: 300px;
+
+}
+
+.francia {
+    border-image-source: linear-gradient(#a90303, #ffffff, #0c038e);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+    padding: 4px;
+    transition: 1s;
+}
+
+.francia:hover {
+    width: 400px;
+    height: 300px;
+
+}
+
+.eeuu {
+    border-image-source: linear-gradient(#0e1995, #ff0000, #ffffff);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+    padding: 4px;
+    transition: 1s;
+}
+
+.eeuu:hover {
+    width: 400px;
+    height: 300px;
+
+}

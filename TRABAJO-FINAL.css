@@ -1,0 +1,77 @@
+body{
+    background-image: url(Fotos/fondos.jpg);
+}
+h1 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    background: linear-gradient(to right, #22b2f5, #09026d, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-principal{
+    background-color: blue;
+    text-align: center;
+    padding: auto;
+}
+.menu-principal ul{
+    list-style-type: none;
+    padding: 10px;
+
+}
+.menu-principal a{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.menu-principal a:hover{
+    color: black;
+}
+
+h2 {
+    font-size: 30px;
+    display: inline;
+    border-image-source: linear-gradient(#15a9ff, #00bfff, #1a05a3);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+    margin-top: -20px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+.bienvenida{
+    border-right: 3px solid white;
+    display: inline-block;
+    text-align: center; 
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+.bienvenida ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bienvenida li {
+    margin: 5px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.bienvenida li:hover{
+    background-color: #00bfff;
+}
+
+footer{
+    display: inline-block;
+    padding: 15px;
+    transition: 2s;
+}
+footer:hover{
+    background-color: #000000;
+}
