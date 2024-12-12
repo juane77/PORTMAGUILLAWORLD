@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<h1>PORTMAGUILLA WORLD</h1>
+<nav class="menu-principal">
+    <ul>
+        <li>
+            <a href="TRABAJO-FINAL.html">INICIO</a>
+            <a href="nuestros-parques.html">NUESTROS PARQUES</a>
+            <a href="mejores-atracciones1.html">ATRACCIONES DE INTERES</a>
+            <a href="formulario.html">PAGINA DE CONTACTO</a>
+        </li>
+    </ul>
+</nav>
+
+<body>
+    <form>
+        <h2 id="formulario">Planifica tu Visita</h2>
+        <form method="post">
+            <h3>Información del Viajero</h3>
+            <p>Nombre: <input type="text" id="nombre" name="nombre"
+                    title="Debe indicar su nombre y apellidos al completo" pattern="[A-Za-z ]{10,30}" required></p>
+
+            <p>Email: <input type="email" id="email" name="email"
+                    title="La estructura debe ser: usuario@dominio.com/.es"
+                    pattern="[A-Za-z0-9]+@[A-Za-z0-9]+\.(es|com)" required></p>
+
+            <p>Telefono pais: <input type="tel" id="prefijo" name="prefijo"
+                    title="Indica el prefijo de tu numero segun tu pais" pattern="[0-9 +]{0,9}" minlength="0"
+                    maxlength="9" required></p>
+
+            <p>Telefono: <input type="tel" id="telefono" name="telefono" title="Indica su numero de telefono completo"
+                    pattern="[0-9]{0,9}" minlength="9" maxlength="9" required></p>
+
+            <h3>Ubicacion Parque de Atracciones</h3>
+            <p>
+                Elige tu ubicacion de destino <input list="parques" required>
+                <datalist id="parques">
+                    <option value="España"></option>
+                    <option value="Francia"></option>
+                    <option value="Italia"></option>
+                    <option value="Estados Unidos"></option>
+                </datalist>
+            </p>
+
+            <h3>Fechas del Viaje</h3>
+            <p>Fecha llegada: <input type="datetime-local" id="fecha-salida" name="fecha-salida"
+                    title="Indique la fecha y hora de su llegada" required></p>
+
+            <p>Fecha salida: <input type="datetime-local" id="fecha-regreso" name="fecha-regreso"
+                    title="Indique la fecha y hora de su salida" required></p>
+
+            <h3>Preferencias de Actividades</h3>
+            <h4>Tipo de Atracciones Deseadas: </h4>
+            <p><input type="radio" name="tipo-actividad" value="montañas-rusas" required>Montañas Rusas</p>
+            <p><input type="radio" name="tipo-actividad" value="agua">Atracciones de Agua</p>
+            <p><input type="radio" name="tipo-actividad" value="realidad-virtual">Realidad Virtual</p>
+            <p><input type="radio" name="tipo-actividad" value="paisajes">Paisajes</label></p>
+
+
+            <p>Comentarios Adicionales<textarea id="comentarios" name="comentarios" rows="3" minlength="20"></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+        </form>
+</body>
+<footer>
+    <p>Gracias por su visita</p>
+    <div class="footer">
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos de uso</a> |
+      <a href="#">Contáctanos</a>
+    </div>
+  </footer>
+
+</html>

@@ -1,0 +1,149 @@
+body {
+  background-color: rgb(249, 248, 248);
+}
+
+h1 {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(to right, #22b2f5, #09026d, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-principal {
+  background-color: blue;
+  text-align: center;
+  padding: auto;
+}
+
+.menu-principal ul {
+  list-style-type: none;
+  padding: 10px;
+
+}
+
+.menu-principal a {
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.menu-principal a:hover {
+  color: black;
+}
+
+.destacados {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f7ff19;
+  color: #000000;
+  border: 3px solid;
+  border-radius: 30px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.imagen-tarjeta {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  padding: 30px;
+}
+
+
+.imagen-tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta p {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #000000;
+  padding: 20px;
+  font-family: 'Arial Narrow';
+  font-weight: bold;
+  border-radius: 30px;
+  border: solid 3px white;
+  background-color: white;
+
+}
+
+footer {
+  font-size: 20px;
+  display: inline;
+  text-align: center;
+}
+footer p{
+  color: #007b9a;
+}
+
+footer a {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #0145cd, #42caef, #210ca8, #090858, #10e3df, #09196b);
+  background-size: 250%;
+  background-position: center;
+  color: #42b1fb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  margin-left: 178px;
+}
+
+footer a::before {
+  position: absolute;
+  content: "DESTACADOS";
+  color: #5ac5f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+footer a:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+footer a:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+footer a:active {
+  transform: scale(0.95);
+}
