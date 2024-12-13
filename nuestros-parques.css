@@ -178,3 +178,8 @@ footer a{
     color: black;
     padding: 10px;
 }
+
+.defensa{
+    border-radius: 30px;
+    border: solid gold 5px;
+}
